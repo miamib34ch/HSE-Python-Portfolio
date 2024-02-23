@@ -37,7 +37,7 @@ class Job(TimeStampMixin):
 
     def summary(self) -> str:
         """
-         Краткое представление подробного описания работы.
-         :return:
-         """
+        Краткое представление подробного описания работы.
+        :return:
+        """
         return self.detailed_description[:100] + "..."
