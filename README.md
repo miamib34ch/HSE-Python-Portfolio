@@ -11,11 +11,12 @@ Install the appropriate software:
 3. [PyCharm](https://www.jetbrains.com/ru-ru/pycharm/download) (optional).
 
 ## Quick start
-1. `docker compose up -d db`
-2. `docker compose run app python manage.py makemigrations`
-3. `docker compose run app python manage.py migrate`
-4. `docker compose run app python manage.py createsuperuser`
-5. `docker compose up --build`
+1. `cp .env.sample .env`
+2. `docker compose up -d db`
+3. `docker compose run app python manage.py makemigrations`
+4. `docker compose run app python manage.py migrate`
+5. `docker compose run app python manage.py createsuperuser`
+6. `docker compose up --build`
 
 ## Installation
 
