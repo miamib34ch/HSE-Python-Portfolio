@@ -3,11 +3,11 @@
 {% block content %}
 
     <div class="container">
-        <h1 class="text-center pt-3 display-4">{{ blog.title }}</h1>
-        <p class="text-center">{{ blog.pub_date }}</p>
-        <p><img src="{{ blog.image.url }}" class="img-fluid" alt="{{ blog.title }}"></p>
-        <p>{{ blog.content }}</p>
-        <a href="{% url 'blogs' %}" class="btn btn-light" role="button">Вернуться в блог</a>
+        <h1 class="text-center pt-3 display-4">{{ job.title }}</h1>
+        <p class="text-center">{{ job.pub_date }}</p>
+        <p><img src="{{ job.image.url }}" class="img-fluid" alt="{{ job.description }}"></p>
+        <p>{{ job.detailed_description|safe }}</p>
+        <a href="{% url 'jobs' %}" class="btn btn-light" role="button">На главную</a>
     </div>
 
 {% endblock %}

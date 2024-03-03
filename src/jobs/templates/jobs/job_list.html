@@ -8,9 +8,9 @@
         <div class="row py-lg-5">
           <div class="col-lg-6 col-md-8 mx-auto">
             <p class="fw-light h1">Привет!</p>
-            <p class="lead text-muted">Меня зовут Иван Иванов. <br />Я профессионально занимаюсь разработкой на Python.</p>
+            <p class="lead text-muted">Меня зовут Богдан Полыгалов. <br />Я профессионально занимаюсь разработкой на Python.</p>
             <p>
-                <img src="{% static 'images/my_photo.jpeg' %}" height="300" alt="Иван Иванов"/>
+                <img src="{% static 'images/my_photo.jpeg' %}" height="300" alt="Богдан Полыгалов"/>
             </p>
             <p>
               <a href="mailto:username(att)somemailserver(dott)com" class="btn btn-primary my-2">Написать мне</a>
@@ -33,10 +33,10 @@
                                  alt="job image"/>
 
                         <div class="card-body">
-                            <p class="card-text">{{ job.description }}</p>
+                            <p class="card-text">{{ job.summary|safe }}</p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
-                                    <a href="#" type="button" class="btn btn-sm btn-outline-secondary">Подробнее</a>
+                                    <a href="{% url 'job' job.id %}" type="button" class="btn btn-sm btn-outline-secondary">Подробнее</a>
                                 </div>
                                 <small class="text-muted"><p>{{ job.created_at|date:"d E Y" }}</p></small>
                             </div>
