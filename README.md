@@ -22,7 +22,7 @@ Install the appropriate software:
 
 Clone the repository to your computer:
 ```bash
-git clone https://github.com/mnv/python-course-portfolio.git
+git clone https://github.com/miamib34ch/HSE-Python-Portfolio.git
 ```
 
 1. To configure the application copy `.env.sample` into `.env` file:
